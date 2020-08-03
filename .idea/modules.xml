@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Aula3HelloWorld/Aula3HelloWorld.iml" filepath="$PROJECT_DIR$/Aula3HelloWorld/Aula3HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aula4VariavelEFluxos/Aula4VariavelEFluxos.iml" filepath="$PROJECT_DIR$/Aula4VariavelEFluxos/Aula4VariavelEFluxos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula5TrabalhandoComCaracteres/Aula5TrabalhandoComCaracteres.iml" filepath="$PROJECT_DIR$/Aula5TrabalhandoComCaracteres/Aula5TrabalhandoComCaracteres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula6PraticandoCondicionais/Aula6PraticandoCondicionais.iml" filepath="$PROJECT_DIR$/Aula6PraticandoCondicionais/Aula6PraticandoCondicionais.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java_study.iml" filepath="$PROJECT_DIR$/.idea/java_study.iml" />
     </modules>
   </component>
