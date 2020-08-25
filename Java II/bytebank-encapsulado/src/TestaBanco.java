@@ -4,7 +4,7 @@ public class TestaBanco {
         Cliente cliente = new Cliente();
         cliente.setNome("João Roberval");
         cliente.setCpf("111.222.333-44");
-        cliente.setProfissao("Pipoqueiro");
+        cliente.setProfissao("Pipoqueiro"); //
 
         cliente.getEndereco().setBairro("Jd.teste"); // A inicialização da propriedade endereco esta sendo realizada na própria classe Cliente
         cliente.getEndereco().setCep("11111111");

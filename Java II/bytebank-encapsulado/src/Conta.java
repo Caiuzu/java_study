@@ -7,7 +7,7 @@ public class Conta {
 
     private static int total; // se torna um atributo da classe, não do objeto
 
-    public Conta(int agencia, int numero){ // construtor, para popular com valores antes de ser criado o objeto
+    public Conta(int agencia, int numero){ // construtor, para popular com valores antes de ser criado o objeto //
         Conta.total++; // para atributo static -> Classe.atributo
         this.setAgencia(agencia);
         this.setNumero(numero);
