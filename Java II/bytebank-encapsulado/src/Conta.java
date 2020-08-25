@@ -5,6 +5,15 @@ public class Conta {
     private int numero;
     private Cliente titular;
 
+    private static int total; // se torna um atributo da classe, não do objeto
+
+    public Conta(int agencia, int numero){ // construtor, para popular com valores antes de ser criado o objeto
+        Conta.total++; // para atributo static -> Classe.atributo
+        this.setAgencia(agencia);
+        this.setNumero(numero);
+        System.out.println("estou criando uma conta, total de contas: " + Conta.total);
+    }
+
     public double getSaldo() {
         return saldo;
     }
@@ -18,6 +27,10 @@ public class Conta {
     }
 
     public void setAgencia(int agencia) {
+        if(agencia <= 0) {
+            System.out.println("Valor inválido");
+            return;
+        }
         this.agencia = agencia;
     }
 
@@ -26,6 +39,10 @@ public class Conta {
     }
 
     public void setNumero(int numero) {
+        if(agencia <= 0) {
+            System.out.println("Valor inválido");
+            return;
+        }
         this.numero = numero;
     }
 
@@ -60,6 +77,14 @@ public class Conta {
 
     public boolean verificaSaldo(double valor) {
         return this.saldo >= valor;
+    }
+
+    public static int getTotal() {
+        return Conta.total;
+    }
+
+    public static void setTotal(int total) {
+        Conta.total = total;
     }
 
 }

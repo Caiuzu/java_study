@@ -11,7 +11,7 @@ public class TestaBanco {
 
         System.out.println("Bairro:" + cliente.getEndereco().getBairro() + " Numero: " + cliente.getEndereco().getNumero()); // A propriedade número, começa com um valor null por ter sido inicializada
 
-        Conta conta = new Conta();
+        Conta conta = new Conta(1337,15683);
         conta.deposita(100);
 
         conta.setTitular(cliente); // Estamos associando 'cliente' como 'titular' de uma 'conta'
