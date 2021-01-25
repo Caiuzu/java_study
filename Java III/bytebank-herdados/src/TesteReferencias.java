@@ -13,10 +13,6 @@ public class TesteReferencias {
         gerente.setName("José");
         gerente.setSalario(5000.0);
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setName("Jailson");
-        funcionario.setSalario(2000.0);
-
         Funcionario editorVideo = new EditorVideo();
         editorVideo.setName("Ediltor Devide");
         editorVideo.setSalario(2000.0);
@@ -24,11 +20,14 @@ public class TesteReferencias {
         Funcionario motorista = new Motorista();
         motorista.setSalario(1500);
 
+        Funcionario designer = new Designer();
+        designer.setSalario(1000);
+
         ControleBonificacao controleBonificacao = new ControleBonificacao();
         controleBonificacao.registra(gerente);
-        controleBonificacao.registra(funcionario);
         controleBonificacao.registra(editorVideo);
         controleBonificacao.registra(motorista);
+        controleBonificacao.registra(designer);
 
         /*
          quando ele for chamar o "funcionario.getBonificacao()" em controleBonificação, ele vai pegar a do tipo do objeto instanciado:
