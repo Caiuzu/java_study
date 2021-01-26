@@ -56,7 +56,21 @@
         f.autentica(1234); // f é do tipo Funcionario e a classe Funcionario não tem o método autentica
       ```
 - o polimorfismo permite que referências de tipos de classes mais genéricas referenciam objetos mais específicos.
-
+- **Quando utilizar?**
+  - Temos um exemplo na classe **Funcionario**, de quando tentamos fazer o getBonificacao específico para cada cargo. 
+    A classe começou a crescer e haver muitas repetições. Sendo assim, pudemos ver a necessidade de aplicação do Polimorfismo. 
+    Quando instanciamos um objeto com a classe genérica, conseguimos então atribuir para cada classe 
+    específica(cada cargo), um comportamento da bonificação para cada um em sua devida classe, o devido valor.
+ 
+    ```java
+      public class Designer extends Funcionario {
+      
+        public double getBonificacao() {
+            return 200;
+        }
+      }
+    ```
+    
 ---
 ### Aula 4 - Herança e o uso de construtores:
 
@@ -66,9 +80,10 @@
 - **A utilização da anotação `@Override`:**
     - É usada para sobrescrever o método da classe mãe, indicando que o método original foi alterado;
     - Serve como uma segurança/lembrete de que o método é uma sobrescrita e não um novo método.
-- **Um construtor da classe mãe pode ser chamado através do `super()`**
+- **Um construtor da classe mãe pode ser chamado através do `super()`** -> `super(agencia, numero);`
 - **A construção de um objeto é baseada em seu(s) construtor(es)** 
-  - Assim que criarmos o nosso próprio construtor, o construtor default (sem parâmetros) deixa de existir, No entanto, nada impede adicionar o construtor default explicitamente.
+  - Assim que criarmos o nosso próprio construtor, o construtor default (sem parâmetros) deixa de existir, 
+    No entanto, nada impede adicionar o construtor default explicitamente.
 
 ---
 ### Aula 5 - Classes e métodos abstratos:
@@ -85,4 +100,7 @@
   - Um método abstrato define apenas a assinatura (visibilidade, retorno, nome do método e parâmetros).
     - Exemplo: `public abstract double getBonificacao();`
   - Classes e métodos abstratos não tem relação direta com consumo de memória.
-  - Usamos métodos abstratos quando queremos "forçar" que um filho concreto (classe concreta) implemente um método.
+  - Usamos métodos abstratos quando queremos "forçar"/obrigar que um filho concreto (classe concreta) implemente um método.
+  - Quando usamos? Um exemplo é quando não temos uma implementação na classe mãe mas queremos que os filhos dela tenham. 
+    Ou seja, neste caso ela só existiria para dizer "quem quiser usar este método implemente-o". 
+    Não esquecendo que ele será implementado pelos filhos e usado de forma polimorfica.
