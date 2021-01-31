@@ -3,9 +3,6 @@ public abstract class Funcionario {
     private String cpg;
     private double salario;
 
-    public Funcionario() {
-    }
-
     public abstract double getBonificacao();
 
     public String getName() {

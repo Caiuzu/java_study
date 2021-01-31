@@ -104,3 +104,20 @@
   - Quando usamos? Um exemplo é quando não temos uma implementação na classe mãe mas queremos que os filhos dela tenham. 
     Ou seja, neste caso ela só existiria para dizer "quem quiser usar este método implemente-o". 
     Não esquecendo que ele será implementado pelos filhos e usado de forma polimorfica.
+
+---
+### Aula 6 - Interfaces:
+
+- Não existe herança múltipla em Java.
+    - Quando nos vemos em uma situação onde sentimos a necessidade de realizar uma heranças multiplas, então devemos aplicar o uso de interface.
+- Conceitos de interface.
+  - É uma classe abstrata, com todos os métodos abstratos. Dentro de uma interface, não há nada concreto.
+  - Interfaces não possuem atributos dentro de seu corpo.
+  - [ `interface` | `implements` ] Utilizaremos a analogia de um contrato. Este contrato precisa ser assinado. Quem o faz, está obrigado a implementar os métodos (por exemplo  os métodos `setSenha`, e o `autentica()` na classe `Autenticavel` em **bytebank-herdados** sendo implementado nas classes `Administrador` e `Gerente`).
+  - Ela é um contrato onde quem assina se responsabiliza por implementar esses métodos (cumprir o contrato)
+  - Podemos estender apenas uma classe abstrata, mas podemos implementar várias interfaces.
+  - Se a utilização da interface começar a crescer com métodos semelhantes, podemos utilizar um método dafault ou retomar para a herança.
+- Diferenças entre classes abstratas e interfaces. Um contrato que define obrigações
+- Interfaces são uma alternativa a herança referente ao polimorfismo
+  - Temos polimorfismo quando uma classe extende de outra ou também quando uma classe implementa uma interface.
+  
