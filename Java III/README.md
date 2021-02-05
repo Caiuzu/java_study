@@ -109,7 +109,7 @@
 ### Aula 6 - Interfaces:
 
 - Não existe herança múltipla em Java.
-    - Quando nos vemos em uma situação onde sentimos a necessidade de realizar uma heranças multiplas, então devemos aplicar o uso de interface.
+    - Quando nos vemos em uma situação onde sentimos a necessidade de realizar heranças multiplas, então devemos aplicar o uso de interface.
 - Conceitos de interface.
   - É uma classe abstrata, com todos os métodos abstratos. Dentro de uma interface, não há nada concreto.
   - Interfaces não possuem atributos dentro de seu corpo.
@@ -120,4 +120,64 @@
 - Diferenças entre classes abstratas e interfaces. Um contrato que define obrigações
 - Interfaces são uma alternativa a herança referente ao polimorfismo
   - Temos polimorfismo quando uma classe extende de outra ou também quando uma classe implementa uma interface.
+
+---
+### Aula 7 - Praticando herança e interfaces:
+
+- Revisão:
+   ```
+    Em comparação com o conceito de herança, onde temos os pilares da reutilização de código e do polimorfismo, 
+    quando falamos de interfaces, não há código concreto, assim, o objetivo não é a reutilização de código, ela é, sim, 
+    uma alternativa ao polimorfismo.
+    
+    Se quisermos somente uma solução pura de polimorfismo, podemos utilizar a interface.
+    
+    Mas e se quisermos somente a reutilização de código, é recomendado utilizar a herança? 
+    Não, a herança é recomendada quando há a combinação das necessidades de reutilização de código e polimorfismo.
+  ```
+  - E se a necessidade for somente a reutilização de código?
+     - Anteriormente, havíamos observado que repetimos muitas vezes, em nosso programa, as linhas de código referentes aos
+    métodos setSenha() e autentica(). A ideia é isolarmos estas linhas de código em uma classe e realizar a instanciação
+    delas dentro do construtor e utilizarmos conforme podemos ver nas classes `Administrador`, `Gerente` e `Cliente`.
   
+      ```Java
+        public class AutenticacaoUtil {
+            private int senha;
+        
+            public void setSenha(int senha) {
+                this.senha = senha;
+            }
+        
+            public boolean autentica(int senha) {
+                return this.senha == senha;
+            }
+        }
+      ```
+      
+    ```Java
+        public class Cliente implements Autenticavel {
+      
+         private final AutenticacaoUtil util;
+      
+          public Cliente() {
+              this.util = new AutenticacaoUtil();
+          }
+      
+          @Override
+          public void setSenha(int senha) {
+              this.util.setSenha(senha);
+          }
+      
+          @Override
+          public boolean autentica(int senha) {
+              return this.util.autentica(senha);
+          }
+        }
+      ```
+
+- Mais a fundo sobre o uso de interfaces:
+    - Garante que todos os métodos de classes que implementam uma interface possam ser chamados com segurança.
+    - Isso é a ideia do contrato, garantindo que a classe tenha um comportamento, basta assinar o contrato (implementar a inteface).
+- Trabalhamos mais a fundo com herança:
+    - A herança captura o que é comum e isola aquilo que é diferente entre classes.
+- Vimos outras aplicações de heranças e interfaces ([bytebank-exercicio](./bytebank-exercicio))
