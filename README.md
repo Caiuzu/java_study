@@ -33,3 +33,9 @@ springboot com várias técnicas do universo java._
 - Entenda o que é Polimorfismo
 - Aprenda sobre reescrita e herança de métodos
 - Conheça super e protected
+
+[Java IV - O que são Enums e Anotações no Java:](https://github.com/Caiuzu/java_study/tree/master/Java%20III)
+---
+
+- Entenda o que são os Enums
+- Entenda o que são as Anotações

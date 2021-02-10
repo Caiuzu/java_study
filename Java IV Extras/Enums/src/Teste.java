@@ -1,11 +1,6 @@
 public class Teste {
 
     public static void main(String[] args) {
-//        Thread t = new Thread(() -> System.out.println("rodando ..."));
-//        t.setPriority(Thread.MIN_PRIORITY);
-//        t.start();
-
-        //Prioridade pMin = new Prioridade();// não tem como instanciar uma enumeração
 
         Prioridade pMin = Prioridade.MIN;
         Prioridade pMax = Prioridade.MAX;
@@ -18,7 +13,6 @@ public class Teste {
 
         System.out.println(pMin.getValor());
         System.out.println(pMax.getValor());
-
 
 
     }
