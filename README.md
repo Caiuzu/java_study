@@ -1,13 +1,14 @@
-# PLANO DE ESTUDOS - JAVA WEB 
+# PLANO DE ESTUDOS - JAVA WEB
+
 ###### Por: [@Caiuzu](https://github.com/Caiuzu)
 
-**JediStack:** _Passando por todos os caminhos necessários para realizar serviços em uma empresa de desenvolvimento de software.
-Desde a criação de um repositório e versionamento, configuração de ambiente e finalização de um sistema utilizando 
-springboot com várias técnicas do universo java._
+**JediStack:** _Passando por todos os caminhos necessários para realizar serviços em uma empresa de desenvolvimento de
+software. Desde a criação de um repositório e versionamento, configuração de ambiente e finalização de um sistema
+utilizando springboot com várias técnicas do universo java._
 
 **#Git #SpringBoot #SpringCloud #Kafka #BDD #Cucumber #NewRelic #Docker**
 
-[JAVA I - Java JRE e JDK:](https://github.com/Caiuzu/java_study/tree/master/Java%20I)
+[JAVA I - Java JRE e JDK:](./Java%20I)
 ---
 
 - JVM? JDK? JRE? O que são essas siglas?
@@ -16,7 +17,7 @@ springboot com várias técnicas do universo java._
 - Variáveis e controle de fluxo
 - Conheça os principais tipos do Java
 
-[JAVA II - Introdução à Orientação a Objetos:](https://github.com/Caiuzu/java_study/tree/master/Java%20II)
+[JAVA II - Introdução à Orientação a Objetos:](./Java%20II/)
 ---
 
 - Domine o paradigma de programação mais usado no mercado de trabalho
@@ -25,7 +26,7 @@ springboot com várias técnicas do universo java._
 - Define objetos através de construtores
 - Aprenda sobre encapsulamento
 
-[JAVA III - Polimorfismo (herança e interfaces):](https://github.com/Caiuzu/java_study/tree/master/Java%20III)
+[JAVA III - Polimorfismo (herança e interfaces):](./Java%20III/)
 ---
 
 - Reuse código com classes Herança e Composição
@@ -34,7 +35,7 @@ springboot com várias técnicas do universo java._
 - Aprenda sobre reescrita e herança de métodos
 - Conheça super e protected
 
-[Java IV - O que são Enums e Anotações no Java:](https://github.com/Caiuzu/java_study/tree/master/Java%20III)
+[Java IV - O que são Enums e Anotações no Java:](./Java%20IV%20Extras)
 ---
 
 - Entenda o que são os Enums

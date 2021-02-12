@@ -81,7 +81,7 @@
     - É usada para sobrescrever o método da classe mãe, indicando que o método original foi alterado;
     - Serve como uma segurança/lembrete de que o método é uma sobrescrita e não um novo método.
 - **Um construtor da classe mãe pode ser chamado através do `super()`** -> `super(agencia, numero);`
-- **A construção de um objeto é baseada em seu(s) construtor(es)** 
+- **A construção de um objeto é baseada em seu(s) construtor(es)**
   - Assim que criarmos o nosso próprio construtor, o construtor default (sem parâmetros) deixa de existir, 
     No entanto, nada impede adicionar o construtor default explicitamente.
 
